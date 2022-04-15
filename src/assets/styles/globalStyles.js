@@ -15,6 +15,9 @@ export const fontStyles = StyleSheet.create({
     fontSize: normalize(9),
     color: 'black',
   },
+  default: {
+    color: 'black',
+  }
 });
 
 export default StyleSheet.create({
@@ -39,6 +42,7 @@ export default StyleSheet.create({
   },
   title: {
     fontSize: normalize(11),
+    color:'black',
     fontWeight: 'bold'
   },
   headingDetail: {

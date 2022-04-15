@@ -57,7 +57,7 @@ const Home = ({navigation}) => {
             onPressClear={()=> getListPokemon()}
           />
           { loading ? <ActivityIndicator />
-            : listPokemon.length == 0 ? <Text style={{alignSelf:'center'}}>No result</Text>
+            : listPokemon.length == 0 ? <Text style={{alignSelf:'center',color:'black'}}>No result</Text>
             : 
             <>
               <HomePagination
@@ -89,7 +89,7 @@ const loadPokemon = (data, navigation) => {
   return (
     <View>
       {
-        data.results.length == 0 ? <Text>No item</Text>
+        data.results.length == 0 ? <Text style={{color:'black'}}>No item</Text>
         : 
         data.results.map(
           (item, index) => <Card

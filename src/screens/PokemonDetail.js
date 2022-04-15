@@ -9,7 +9,7 @@ import {
   ImageBackground,
   TouchableOpacity
 } from 'react-native';
-import globalStyles from '../assets/styles/globalStyles';
+import globalStyles, { fontStyles } from '../assets/styles/globalStyles';
 import Icon from 'react-native-vector-icons/Ionicons'
 import { deviceHeight, deviceWidth, responsiveHeight, responsiveWidth } from '../assets/styles/constants';
 import ContainerDetail from '../assets/components/containerDetail';
@@ -76,8 +76,8 @@ const renderMoves = (title, data) => {
 const rendeItem = (index, title, desc) => {
     return(
         <View key={index} style={{flexDirection:'row',justifyContent:'space-between',width:responsiveHeight(35)}}>
-            <Text>{title}</Text>
-            <Text>{desc}</Text>
+            <Text style={fontStyles.default}>{title}</Text>
+            <Text style={fontStyles.default}>{desc}</Text>
         </View>
     )
 }
@@ -85,7 +85,7 @@ const rendeItem = (index, title, desc) => {
 const renderTag = (name) => {
     return(
         <View style={[globalStyles.tag]}>
-            <Text >{name}</Text>
+            <Text style={fontStyles.default}>{name}</Text>
         </View>
     )
 }

@@ -23,6 +23,7 @@ export default SearchField = (props) => {
                     borderRadius: 25,
                 }}
                 placeholder='What pokemon are you looking for?'
+                placeholderTextColor={'black'}
                 onChangeText={(text) => setText(text)}
                 onSubmitEditing={() => props.onSubmitEditing(searchText)}
                 value={searchText}

@@ -21,7 +21,7 @@ const ContainerDetail = (props) => {
         <Icon name='arrow-back' color='white' size={responsiveHeight(6)}/>
       </TouchableOpacity>
       <View style={{marginTop: responsiveHeight(37)}}/>
-      <View style={[globalStyles.container, {backgroundColor: 'white',width:deviceWidth,alignItems:'center',borderRadius:50}]}>
+      <View style={[globalStyles.container, {backgroundColor: 'white',width:deviceWidth,alignItems:'center',borderTopLeftRadius:50,borderTopRightRadius:50}]}>
         {props.children}
       </View>
       </ImageBackground>

@@ -45,21 +45,21 @@ export const Card = (props, {navigation}) => {
         >
             <View style={{padding: 15, paddingRight: 0, width: deviceWidth / 1.7}}>
                 
-                <Text style={{}}>#{details.id}</Text>
+                <Text style={{color:'black'}}>#{details.id}</Text>
                 <Text style={globalStyles.title}>{details.name}</Text>
 
-                {/* <FlatList
+                <FlatList
                     scrollEnabled={false}
                     data={details.types}
                     renderItem={({item}) => (
                         <View style={styles.tag}>
-                            <Text style={{textAlign: 'center'}}>{item.type.name}</Text>
+                            <Text style={{textAlign: 'center',color:'black'}}>{item.type.name}</Text>
                         </View>
                     )}
                     //Setting the number of column
                     numColumns={3}
                     keyExtractor={(item, index) => index}
-                /> */}
+                />
                 
             </View>
 
